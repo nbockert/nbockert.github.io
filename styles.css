@@ -1,0 +1,90 @@
+body{
+    background-color: #cdf3ff;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align:center
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #164863;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+table{
+    color: aliceblue;
+    background: #164863;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.role{
+    text-align: center;
+}
+.back{
+    text-align: left;
+}
+#about{
+    text-align: center;
+}
+
+.navbar {
+    background-color: #164863;
+    overflow: hidden;
+    color:aliceblue
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li {
+    float: right;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#nametag{
+    margin-right: auto;
+    color: white;
+}
+.circular-image {
+    width: 200px; /* Adjust to your preferred size */
+    height: 200px; /* Ensures the image is a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #164863; /* Adds a solid border around the image */
+    object-fit: cover; /* Ensures the image covers the entire circular area */
+
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* height: 100vh;  */
+}
