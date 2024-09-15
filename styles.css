@@ -1,11 +1,30 @@
 body{
     background-color: #cdf3ff;
+    font-family:'Courier New', Courier, monospace;
+    color:#164863;
+}
+#ass{
+    color:#164863;
 }
 h1{
     text-align: center;
 }
 h2{
     text-align:center
+}
+.assbutton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cdf3ff;
+    color: #164863;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.assbutton:hover {
+    background-color: #164863;
+    color:aliceblue;
 }
 
 button {
@@ -17,10 +36,11 @@ button {
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 button:hover {
-    background-color: darkblue;
+    background-color: #0f3449;
 }
 
 table{
@@ -38,6 +58,20 @@ table{
 }
 #about{
     text-align: center;
+}
+.circular-image {
+    width: 200px; /* Adjust to your preferred size */
+    height: 200px; /* Ensures the image is a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #164863; /* Adds a solid border around the image */
+    object-fit: cover; /* Ensures the image covers the entire circular area */
+
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* height: 100vh;  */
 }
 
 .navbar {
@@ -73,18 +107,56 @@ table{
 #nametag{
     margin-right: auto;
     color: white;
+    padding-left: 10px;
 }
-.circular-image {
-    width: 200px; /* Adjust to your preferred size */
-    height: 200px; /* Ensures the image is a perfect circle */
-    border-radius: 50%; /* Makes the image circular */
-    border: 5px solid #164863; /* Adds a solid border around the image */
-    object-fit: cover; /* Ensures the image covers the entire circular area */
 
-}
-.image-container {
+
+.card-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    /* height: 100vh;  */
+    gap: 20px; /* Space between the cards */
+    justify-content: center; /* Centers the cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: #164863;
+    border: 1px solid #12374b;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+.card-title {
+    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+    color:aliceblue;
+}
+
+.card-text {
+    font-size: 1rem;
+    color:aliceblue;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-around; /* Spread out the contact items */
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* If screen is small, allows wrapping to next line */
+}
+
+.contact-item {
+    text-align: center;
+    width: 200px; /* Width of each contact item */
+    margin: 10px;
+}
+
+/* Styling for the icons */
+.icon {
+    width: 75px; /* Set size of icon */
+    height: 75px;
+    margin-bottom: 10px;
 }
