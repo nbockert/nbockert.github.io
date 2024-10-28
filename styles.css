@@ -111,10 +111,18 @@ table{
 }
 
 
+.card-video {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Match the card's border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+}
+
+/* Existing styles */
 .card-container {
-    display: flex;
-    gap: 20px; /* Space between the cards */
-    justify-content: center; /* Centers the cards */
+    display: block;
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -128,25 +136,25 @@ table{
     text-align: center;
 }
 
-
-
 .card-title {
     margin: 15px 0 10px 0;
     font-size: 1.5rem;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .card-text {
     font-size: 1rem;
-    color:aliceblue;
+    color: aliceblue;
 }
+
 .contact-container {
     display: flex;
-    justify-content: space-around; /* Spread out the contact items */
+    justify-content: space-around;
     align-items: center;
     margin: 20px 0;
-    flex-wrap: wrap; /* If screen is small, allows wrapping to next line */
+    flex-wrap: wrap;
 }
+
 
 .contact-item {
     text-align: center;
@@ -159,4 +167,7 @@ table{
     width: 75px; /* Set size of icon */
     height: 75px;
     margin-bottom: 10px;
+}
+.download-button{
+    color:aliceblue;
 }
