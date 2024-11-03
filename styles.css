@@ -127,6 +127,8 @@ table{
 }
 
 .card {
+    justify-content: center;
+    align-items: center;
     background-color: #164863;
     border: 1px solid #12374b;
     border-radius: 8px;
